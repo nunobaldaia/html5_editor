@@ -1,0 +1,167 @@
+/*
+  HTML5 Editor Active Admin integration styles
+  */
+
+.html5-editor-container {
+  display: inline-block;
+  width: 76%;
+}
+
+.html5-editor-container .toolbar {
+  padding: 4px 0;
+}
+
+/*
+  Set the HTML 4 default style sheet from http://www.w3.org/TR/CSS2/sample.html
+  */
+.html5-editor-container html,
+.html5-editor-container address,
+.html5-editor-container blockquote,
+.html5-editor-container body,
+.html5-editor-container dd,
+.html5-editor-container div,
+.html5-editor-container dl,
+.html5-editor-container dt,
+.html5-editor-container fieldset,
+.html5-editor-container form,
+.html5-editor-container frame,
+.html5-editor-container frameset,
+.html5-editor-container h1,
+.html5-editor-container h2,
+.html5-editor-container h3,
+.html5-editor-container h4,
+.html5-editor-container h5,
+.html5-editor-container h6,
+.html5-editor-container noframes,
+.html5-editor-container ol,
+.html5-editor-container p,
+.html5-editor-container ul,
+.html5-editor-container center,
+.html5-editor-container dir,
+.html5-editor-container hr,
+.html5-editor-container menu,
+.html5-editor-container pre             { display: block; unicode-bidi: embed }
+.html5-editor-container li              { display: list-item; }
+.html5-editor-container head            { display: none }
+.html5-editor-container table           { display: table }
+.html5-editor-container tr              { display: table-row }
+.html5-editor-container thead           { display: table-header-group }
+.html5-editor-container tbody           { display: table-row-group }
+.html5-editor-container tfoot           { display: table-footer-group }
+.html5-editor-container col             { display: table-column }
+.html5-editor-container colgroup        { display: table-column-group }
+.html5-editor-container td,
+.html5-editor-container th              { display: table-cell }
+.html5-editor-container caption         { display: table-caption }
+.html5-editor-container th              { font-weight: bolder; text-align: center }
+.html5-editor-container caption         { text-align: center }
+.html5-editor-container body            { margin: 8px }
+.html5-editor-container h1              { font-size: 2em; margin: .67em 0 }
+.html5-editor-container h2              { font-size: 1.5em; margin: .75em 0 }
+.html5-editor-container h3              { font-size: 1.17em; margin: .83em 0 }
+.html5-editor-container h4,
+.html5-editor-container p,
+.html5-editor-container blockquote,
+.html5-editor-container ul,
+.html5-editor-container fieldset,
+.html5-editor-container form,
+.html5-editor-container ol,
+.html5-editor-container dl,
+.html5-editor-container dir,
+.html5-editor-container menu            { margin: 1.12em 0 }
+.html5-editor-container h5              { font-size: .83em; margin: 1.5em 0 }
+.html5-editor-container h6              { font-size: .75em; margin: 1.67em 0 }
+.html5-editor-container h1,
+.html5-editor-container h2,
+.html5-editor-container h3,
+.html5-editor-container h4,
+.html5-editor-container h5,
+.html5-editor-container h6,
+.html5-editor-container b,
+.html5-editor-container strong          { font-weight: bolder }
+.html5-editor-container blockquote      { margin-left: 40px; margin-right: 40px }
+.html5-editor-container i,
+.html5-editor-container cite,
+.html5-editor-container em,
+.html5-editor-container var,
+.html5-editor-container address         { font-style: italic }
+.html5-editor-container pre,
+.html5-editor-container tt,
+.html5-editor-container code,
+.html5-editor-container kbd,
+.html5-editor-container samp            { font-family: monospace }
+.html5-editor-container pre             { white-space: pre }
+.html5-editor-container button,
+.html5-editor-container textarea,
+.html5-editor-container input,
+.html5-editor-container select          { display: inline-block }
+.html5-editor-container big             { font-size: 1.17em }
+.html5-editor-container small,
+.html5-editor-container sub,
+.html5-editor-container sup             { font-size: .83em }
+.html5-editor-container sub             { vertical-align: sub }
+.html5-editor-container sup             { vertical-align: super }
+.html5-editor-container table           { border-spacing: 2px; }
+.html5-editor-container thead,
+.html5-editor-container tbody,
+.html5-editor-container tfoot           { vertical-align: middle }
+.html5-editor-container td,
+.html5-editor-container th,
+.html5-editor-container tr              { vertical-align: inherit }
+.html5-editor-container s,
+.html5-editor-container strike,
+.html5-editor-container del             { text-decoration: line-through }
+.html5-editor-container hr              { border: 1px inset }
+.html5-editor-container ol,
+.html5-editor-container ul,
+.html5-editor-container dir,
+.html5-editor-container menu,
+.html5-editor-container dd              { margin-left: 40px }
+.html5-editor-container ol              { list-style-type: decimal }
+.html5-editor-container ol ul,
+.html5-editor-container ul ol,
+.html5-editor-container ul ul,
+.html5-editor-container ol ol           { margin-top: 0; margin-bottom: 0 }
+.html5-editor-container u,
+.html5-editor-container ins             { text-decoration: underline }
+.html5-editor-container br:before       { content: "\A"; white-space: pre-line }
+.html5-editor-container center          { text-align: center }
+.html5-editor-container :link,
+.html5-editor-container :visited        { text-decoration: underline }
+.html5-editor-container :focus          { outline: thin dotted invert }
+
+/* Begin bidirectionality settings (do not change) */
+.html5-editor-container BDO[DIR="ltr"]  { direction: ltr; unicode-bidi: bidi-override }
+.html5-editor-container BDO[DIR="rtl"]  { direction: rtl; unicode-bidi: bidi-override }
+
+.html5-editor-container *[DIR="ltr"]    { direction: ltr; unicode-bidi: embed }
+.html5-editor-container *[DIR="rtl"]    { direction: rtl; unicode-bidi: embed }
+
+@media print {
+  .html5-editor-container h1            { page-break-before: always }
+  .html5-editor-container h1,
+  .html5-editor-container h2,
+  .html5-editor-container h3,
+  .html5-editor-container h4,
+  .html5-editor-container h5,
+  .html5-editor-container h6            { page-break-after: avoid }
+  .html5-editor-container ul,
+  .html5-editor-container ol,
+  .html5-editor-container dl            { page-break-before: avoid }
+}
+
+
+/*
+  Override styles
+  */
+.html5-editor-container ul li {
+  list-style-type: disc !important;
+}
+
+.html5-editor-container ol li {
+  padding: 0;
+}
+
+.html5-editor-container pre {
+  font-size: 120%;
+}

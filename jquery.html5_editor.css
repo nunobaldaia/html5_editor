@@ -1,0 +1,103 @@
+﻿/*
+  HTML5 Editor main styles
+  */
+
+/*
+  Containers
+  */
+.html5-editor-container {
+	position: relative;
+	padding: 0 10px;
+	border: 1px solid #c9d0d6;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.html5-editor-container .html5-editor {
+	min-height: 100px;
+	margin: 40px 0 10px;
+}
+
+/*
+  Toolbar
+  */
+.html5-editor-container .toolbar {
+	position: absolute;
+  top: 0;
+	z-index: 10;
+	background-color: #fff;
+  border: 1px solid #c9d0d6;
+  border-top: none;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.html5-editor-container .toolbar ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+}
+
+.html5-editor-container .toolbar ul:last-child {
+	margin-right: 0;
+}
+
+.html5-editor-container .toolbar li {
+  display: inline-block;
+}
+
+.html5-editor-container .toolbar li:last-child {
+	border-right: none;
+}
+
+.html5-editor-container .toolbar a {
+  font-family: 'Times New Roman', serif;
+  font-size: 13px;
+  text-decoration: none;
+  line-height: 21px;
+  padding: 7px 6px;
+  text-shadow: 0 1px 1px #fff;
+  color: #666;
+}
+
+.html5-editor-container .toolbar a:hover {
+	background-color: #c9d0d6;
+}
+
+.html5-editor-container .toolbar .code {
+	font-family: Fixed, Courier, monospace;
+}
+
+.html5-editor-container .toolbar .bold {
+	font-weight: bold;
+}
+
+.html5-editor-container .toolbar .italic {
+	font-style: italic;
+}
+
+.html5-editor-container .toolbar .underline {
+	text-decoration: underline;
+}
+
+.html5-editor-container .toolbar .strike {
+	text-decoration: line-through;
+	font-variant: small-caps;
+}
+
+/*
+  Fix toolbar on top the the editor
+  */
+.html5-editor-container .toolbar.fixed {
+  position: fixed;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
